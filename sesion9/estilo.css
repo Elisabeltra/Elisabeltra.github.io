@@ -1,0 +1,37 @@
+
+h1{
+    text-align: center;
+}
+section {
+ text-align: center;
+font-size: 20px;
+margin-left: 200px;
+    margin-right: 140px;
+    margin-bottom: 140px;
+}
+
+img {
+    width: 25%;
+    height: 25%;
+    filter: blur(0);
+}
+
+a:hover img {
+    filter: blur(3px);
+}
+div.gallery {
+  margin: 15px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 500px;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 70px;
+  text-align: center;
+}
