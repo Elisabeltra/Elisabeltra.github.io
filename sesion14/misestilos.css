@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    height: 50px;
+     width: 100%;
+    background-color: darkslategray;
+    color:white;
+    text-align: center;
+    font-family:sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    position: fixed;
+
+}
+.contenedor{
+      margin-top: 15px;
+    max-width: 850px;
+    display: flex;
+    justify-content:center;
+    display: inline-block;
+
+    }
+
+article{
+    width:100%;
+    margin-left:0;
+    margin-right:0;
+    text-align: center;
+}
+img{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+h1{
+    padding: 0 30% 0 30%;
+    font-family: minion pro;
+    font-size: 58px;
+    text-align: center;
+    }
+    
+h2{
+    padding: 0 30% 0 30%;
+    font-family: minion pro;
+    font-size: 22px;
+    text-align: center;
+}
+
+h3{font-style:bold;
+    color: black;
+    font-size:25px;
+    text-align: left;
+ padding: 0 30% 0 30%}
+
+p{
+    padding: 0 30% 0 30%;
+    font-family: minion pro;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 300;
+    text-align: left;
+    color: black;
+}
+.header2{
+    color:white;
+    text-decoration: none;
+}
+.enlace_acceso{
+    color:white;
+    text-decoration: none;
+}
+
+.capitular{
+    font-size:100px;
+    color:black;
+}
+
+a{
+    color:black;
+}
+.linksubrayado:hover{
+    text-decoration: underline;
+    color:black;
+    font-weight: bold;
+}
+.negrita{
+    font-weight: bold;
+    color: black;
+}
+.cursiva{
+    font-style: italic;
+    color: black;
+}
+
+
+#banner{
+    width:40%; 
+    height: 20%;
+    margin-top:2%;
+    margin-bottom:2%;
+    }
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+/*EFECTO DESCRIPCIÓN IMÁGEN*/
+
+.container2 {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+    width: 80%; 
+    margin-bottom:2%;
+    padding: 0 60% 0 60%;
+ 
+ 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 60%;
+  right: 0;
+  width: 80%;
+    align-content: center;
+    padding: 40%, 60%, 40%, 60%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: darkslategray;
+}
+
+.container2:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
