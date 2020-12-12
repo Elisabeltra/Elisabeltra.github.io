@@ -1,0 +1,51 @@
+ div {
+            box-sizing: border-box; /* para que los bordes, paddings estén en la anchura (determinada por col) */
+        }
+        
+        
+     #menu{
+         background-color: violet;
+        align-items: center;
+         padding: 20px;
+      
+} 
+#logo {
+         background-color: pink;
+      padding: 20px;
+    
+}
+#contenido {
+         background-color: skyblue;
+      padding:20px;
+}
+
+#publicidad {
+         background-color: mistyrose;
+      padding:20px;
+}
+
+   #pie {
+         background-color: darkseagreen;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+}
+h2{
+    text-align:left;
+    font-size: 20px;
+}
+
+.segunda{
+    background-color: aqua;
+}
+
+p{
+   
+    font-size: 15px;
+}
+h3{
+    font-size: 15px;
+     text-align:center;
+}
