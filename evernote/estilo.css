@@ -1,0 +1,80 @@
+ div {
+            box-sizing: border-box; /* para que los bordes, paddings estén en la anchura (determinada por col) */
+        }
+        
+  
+
+#logo {
+        
+      padding: 0px;
+    
+}
+#evernote {
+        
+      padding-top:50px;
+    
+}
+
+#botonera{
+    padding-top: 40px;
+    color: greenyellow;
+    font-size: 25px;
+    color: lightseagreen;
+}
+#foot2 {
+     
+      padding-bottom:10px;
+}
+
+#publicidad {
+         background-color: mistyrose;
+      padding:20px;
+}
+
+   #pie {
+         background-color: darkseagreen;
+}
+
+h1{
+    text-align: left;
+    font-size: 25px;
+    color: lightseagreen;
+    font-family: sans-serif;
+}
+h2{
+    text-align: left;
+    font-size: 25px;
+    color: black;
+    font-family: sans-serif;
+}
+
+h3{
+    text-align: center;
+    font-size: 10px;
+    color: black;
+    font-family: sans-serif;
+}
+
+#video{
+     align-content: center;
+}
+p{
+   
+    font-size: 15px;
+}
+
+#imagen1{
+    width: 10%;
+
+}
+
+#card{
+    width: 300px;
+    padding: 20px;
+}
+.linea {
+  border-top: 1px solid black;
+  height: 2px;
+  padding: 0;
+  margin: 20px auto 0 auto;
+}
