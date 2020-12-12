@@ -5,6 +5,13 @@
     font-family:sans-serif;
     font-size: 18px;
 }
+#segundo_indice{
+    height: 50px;
+    color:black;
+    padding: 0 5% 0 5%;
+    font-family:sans-serif;
+    font-size: 18px;
+}
 
 p{
     padding: 0 30% 0 30%;
@@ -18,3 +25,4 @@ p{
     color:black;
     text-decoration: none;
 }
+
