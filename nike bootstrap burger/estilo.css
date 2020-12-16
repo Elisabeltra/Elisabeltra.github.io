@@ -1,0 +1,50 @@
+div {
+            box-sizing: border-box; /* para que los bordes, paddings estén en la anchura (determinada por col) */
+        }
+        
+    
+
+#menu {
+         background-color: white;
+      padding: 20px;
+    color: black;
+    
+}
+#enlaces {
+         background-color: black;
+      padding: 20px;
+}
+#direccion{
+    color: white;
+    font-size: 15px;
+}
+#contenido {
+      padding:20px;
+}
+ 
+
+h1 {
+    font-size: 20px;
+    
+}
+
+h2 {
+    font-size: 15px;
+    color: darkgray;
+}
+
+p {
+    font-size: 20px;
+    
+}
+
+
+ /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+
