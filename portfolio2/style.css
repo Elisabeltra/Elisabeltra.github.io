@@ -1,0 +1,39 @@
+:root{
+    --color-light: #ffffff;
+    --color-black: #1b1b1b;
+    --color-green: #194A3A;
+}
+
+body{
+font-family: 'Dosis', sans-serif;
+font-weight: 200px;
+}
+
+.bg-green{
+color: #194A3A;
+}
+.fondo_bn{
+    background-color: var(--color-light);
+    color: var(--color-black);  
+}
+
+.menu_bn{
+    background-color: var(--color-light);
+    color: var(--color-black);  
+}
+.fondo_gr{
+    background-color: var(--color-green);
+color: var(--color-light);
+}
+
+#div-cookies {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px -5px 15px gray;
+    padding: 7px;
+    text-align: center;
+    z-index: 99;
+}
