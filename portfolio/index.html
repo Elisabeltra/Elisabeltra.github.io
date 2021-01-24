@@ -1,69 +1,210 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
+<html lang="es">
+
+<head>
+    <title>Wolf Moon</title>
+    <link rel="shortcut icon" type="image/png" href="img/favocon.png" />
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="estilo.css">
-    <title>Hello, world!</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="style.css">
 </head>
- 
+<header>
+    <!-- MENÚ-->
+    <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <!-- logo wolf moon -->
+            <a class="navbar-brand">
+                <img src="img/ICONO.png" alt="logo" style="width:150px;"> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span> </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+                <ul class="navbar-nav ml-auto">
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Portfolio</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#grafico">Diseño gráfico</a>
+                            <a class="dropdown-item" href="#ilustracion">Ilustración</a>
+                        </div>
+                    </li>
+                    <!--links-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre_mi.html">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">¿Hablamos?</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
 <body>
     
- <div class="container">
-            <nav class="navbar navbar-expand-md bg-green navbar-dark">
-                
-                <!-- logo wolf moon --> 
-                <a class="navbar-brand" href="#"> 
-                    <img src="img/ICONO%20balnco%20y%20sin%20fondo.png" alt="logo" style="width:150px;"> </a> 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> 
-                <span class="navbar-toggler-icon"></span> </button>
-                
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Dropdown -->
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-        Dropdown link
-      </a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Link 1</a>
-        <a class="dropdown-item" href="#">Link 2</a>
-        <a class="dropdown-item" href="#">Link 3</a>
-      </div>
-    </li>
-                      
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre mí</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contáctanos</a>
-                        </li>
-                        
-                    </ul>
+    <!-- CAROUSEL -->
+     <div class="container-fluid">
+   <!-- CAROUSEL -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- barritas indicadoras nº img -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+            </ul>
+
+            <!-- Imágenes-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/logo%20libreria.png" alt="logo">
                 </div>
-            </nav> <br> 
-    <div class="container">
-        <div class="container gallery-container">
+                <div class="carousel-item">
+                    <img src="img/afro%20cortado.jpg" alt="Vuelta">
+                </div>
+            </div>
 
-    <h1>Bootstrap 3 Gallery</h1>
+            <!-- Iconos controles derecha e izquierda-->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+    </div>
+         </div>
+    <!-- Contenido -->
+    <section id="grafico">
+    <div class="container">   
+        <h2 class="text-center">Diseño gráfico</h2>
+        <p>El oráculo de los diseñadores está compuesto por cinco cartas y en cada una ellas encontramos un arquetipo de diseñador.<br>Mi objetivo al crear el oráculo fue ayudar a cualquier creador a conocerse mejor y poder orientar su trabajo hacia sus ideales. Si quieres averiguar cuál es tu arquetipo pincha <a class="link" target="_blank" href="https://www.quiz-maker.com/QWERJFG6">aquí.</a> 
+        </p>
+        </div> 
+        <div class="lightbox-gallery">
+            <div><img src="img/1.jpg" gallery-full-image="img/1.jpg" alt="ecologista" /></div>
+            <div><img src="img/3.jpg" gallery-full-image="img/3.jpg" alt="solidario" /></div>
+            <div><img src="img/2.jpg" gallery-full-image="img/2.jpg" alt="familiar" /></div>
+            <div><img src="img/el%20cuiador%20verde.jpg" gallery-full-image="img/el%20cuiador%20verde.jpg" alt="cuidador" /></div>
+            <div><img src="img/oraculo%20(1).gif" gallery-full-image="img/oraculo%20(1).gif" alt="ecologista" /></div>
+            <div><img src="img/el%20educador.png" gallery-full-image="img/el%20educador.png" alt="educador" /></div>
+        </div>
+    <div class="container">   
+        <p>Encargo realizado para el centro Sangat Yoga Novelda.</p>
+        </div>
+        <div class="lightbox-gallery">
+            <div><img src="img/chackras.png" gallery-full-image="img/chackras.png" alt="camiseta_chackras" /></div>
+            <div><img src="img/Satnam%20cami.png" gallery-full-image="img/Satnam%20cami.png" alt="camiseta_satnam" /></div>
+            <div><img src="img/Satnam%20bolsa.png" gallery-full-image="img/Satnam%20bolsa.png" height="500px" width="625px" alt="bolsa_satnam" /></div>
+            <div><img src="img/wahe%20guru%20bolsa%20mockup.png" gallery-full-image="img/wahe%20guru%20bolsa%20mockup.png" height="500px" width="625px" alt="wahe_guru_bolsa" /></div>
+            <div><img src="img/wahe%20guru.png" gallery-full-image="img/wahe%20guru.png" alt="wahe_guru_bolsa" /></div>
+        </div>
+    <div class="container">   
+        <p>Rediseño ficticio para Ediciones Salamandra de una colección de tres libros de clásicos infantiles que marcaron historia. 
+        </p>
+        </div>
+        <div class="lightbox-gallery">
+            <div><img src="img/principito.jpg" gallery-full-image="img/principito.jpg" alt="El principito" /></div>
+            <div><img src="img/alicia.jpg" gallery-full-image="img/alicia.jpg" alt="Alicia en el País de las Maravillas" /></div>
+            <div><img src="img/el%20mago%20de%20oz.jpg" gallery-full-image="img/el%20mago%20de%20oz.jpg" alt="El mago de Oz" /></div>
+        </div>
 
-    <p class="page-description text-center">Grid Layout With Zoom Effect</p>
-    
-    
+    <div class="container">   
+        <p>Imagotipo para Sakura Haru.
+        </p>
+        </div>
+        <div class="lightbox-gallery">
+            <div><img src="img/LOGO.jpg" gallery-full-image="img/LOGO.jpg" alt="Sakura Haru" /></div>
+            <div><img src="img/taza.png" gallery-full-image="img/taza.png" alt="Taza de Sakura Haru" /></div>
+        </div>
+            <div class="container">  
+                <p>Cartel hecho con estarcido inspirado en la serie de Las escalofriantes aventuras de Sabrina.</p>
+        </div>
+        <div class="lightbox-gallery">
+            <div><img src="img/sabrina.jpg" gallery-full-image="img/sabrina.jpg" alt="Cartel para la serie de Sabrina" /></div>
+            <div><img src="img/cartel%20sabrina.jpg" gallery-full-image="img/cartel%20sabrina.jpg" alt="Colección de carteles para la serie de Sabrina" /></div>
+        </div>
+    </section>
+
+    <section id="ilustracion">
+            <div class="container">   
+    <h2 class="text-center">Ilustración</h2>
+        </div>
+        <div class="lightbox-gallery">
+            <div><img src="img/hada.jpg" gallery-full-image="img/hada.jpg" alt="La mirada de un hada" /></div>
+            <div><img src="img/jardin_hadas.jpg" gallery-full-image="img/jardin_hadas.jpg" alt="Jardín de las hadas" /></div>
+            <div><img src="img/corazon.jpg" gallery-full-image="img/corazon.jpg" alt="Resquicios de un corazón" /></div>
+            <div><img src="img/hilo_rojo.jpg" gallery-full-image="img/hilo_rojo.jpg" alt="Hilo rojo del destino" /></div>
+            <div><img src="img/rostro_asiatico.jpg" gallery-full-image="img/rostro_asiatico.jpg" alt="Enigma" /></div>
+            <div><img src="img/afro.jpg" gallery-full-image="img/afro.jpg" alt="El empoderamiento" /></div>
+            <div><img src="img/amistad.jpg" gallery-full-image="img/amistad.jpg" alt="Amistad" /></div>
+            <div><img src="img/rostro.jpg" gallery-full-image="img/rostro.jpg" alt="Tras una mirada" /></div>
+        </div>
+    </section>
+        
+         <!--Cookies-->
+   <div id="div-cookies">
+Necesitamos usar cookies para que funcione todo, si permanece aquí acepta su uso, más información en
+<a hreflang="es" href="/info/aviso-legal">Aviso Legal</a>
+y la
+<a hreflang="es" href="/info/politica-de-privacidad">Política de Privacidad</a>.
+<button type="button" class="btn btn-sm btn-primary">
+Acepto el uso de cookies
+</button>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-<script>
-    baguetteBox.run('.tz-gallery');
-</script>
-    </div>
-        </div>
-</body></html>
+    <script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $('#div-cookies').hide();
+  });
+});
+</script> 
+        <script>
+            // Create a lightbox
+            (function() {
+                var $lightbox = $("<div class='lightbox'></div>");
+                var $img = $("<img>");
+                var $caption = $("<p class='caption'></p>");
+
+                // Add image and caption to lightbox
+
+                $lightbox
+                    .append($img)
+                    .append($caption);
+
+                // Add lighbox to document
+
+                $('body').append($lightbox);
+
+                $('.lightbox-gallery img').click(function(e) {
+                    e.preventDefault();
+
+                    // Get image link and description
+                    var src = $(this).attr("src");
+                    var cap = $(this).attr("alt");
+
+                    // Add data to lighbox
+
+                    $img.attr('src', src);
+                    $caption.text(cap);
+
+                    // Show lightbox
+
+                    $lightbox.fadeIn('fast');
+
+                    $lightbox.click(function() {
+                        $lightbox.fadeOut('fast');
+                    });
+                });
+
+            }());
+
+        </script>
+</body>
+
+</html>

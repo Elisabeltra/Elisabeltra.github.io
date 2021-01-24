@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <title>Wolf Moon</title>
-    <link rel="shortcut icon" type="image/png" href="img/favocon.png"/>
+    <link rel="shortcut icon" type="image/png" href="img/favocon.png" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -13,75 +12,193 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
-
+<script>
+function checkAcceptCookies() {
+    if (localStorage.acceptCookies == 'true') {} else {
+        $('#div-cookies').show();
+    }
+}
+function acceptCookies() {
+    localStorage.acceptCookies = 'true';
+    $('#div-cookies').hide();
+}
+$(document).ready(function() {
+    checkAcceptCookies();
+});
+</script>
 <body>
-    <div class="fondo_bn">
-    <!-- MENÚ-->
-    <div class="container">
-        <nav class="navbar navbar-expand-md navbar-light"> 
-            <!-- logo wolf moon -->
-            <a class="navbar-brand" href="#">
-                <img src="img/ICONO.png" alt="logo" style="width:150px;"> </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span> </button>
+    
+        <!-- MENÚ-->
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <!-- logo wolf moon -->
+                <a class="navbar-brand" href="#">
+                    <img src="img/ICONO.png" alt="logo" style="width:150px;"> </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span> </button>
 
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
 
-                <ul class="navbar-nav ml-auto">
-                    <!-- Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Portfolio</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Diseño gráfico</a>
-                            <a class="dropdown-item" href="#">Ilustración</a>
-                        </div>
-                    </li>
-                    <!--links-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="sobre_mi.html">Sobre mí</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contáctanos</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-   <!-- contenido-->
-    <div class="container">   
-        <div class="row">
-        <!-- galeria-->
-        
-            <section id="card" class="col-xs-1 col-md-4 col-lg-6">
-                <img class="card-img-top" src="img/el%20cuiador%20verde.jpg" alt="Card image">
-            </section>
-
-            <section id="card" class="col-xs-1 col-md-4 col-lg-6">
-                <img class="card-img-top" src="img/3.jpg" alt="Card image">
-            </section>
-            
-            <section id="card" class="col-xs-1 col-md-4 col-lg-4">
-                <img class="card-img-top" src="img/1.jpg" alt="Card image">
-            </section>
-             <section id="card" class="col-xs-1 col-md-4 col-lg-4">
-                <img class="card-img-top" src="img/2.jpg" alt="Card image">
-            </section>
-            <section id="card" class="col-xs-1 col-md-4 col-lg-4">
-                <img class="card-img-top" src="img/el%20educador.jpg" alt="Card image">
-            </section>
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Portfolio</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Diseño gráfico</a>
+                                <a class="dropdown-item" href="#">Ilustración</a>
+                            </div>
+                        </li>
+                        <!--links-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre_mi.html">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
 
-        </div> 
-    </div>  
+    
+         <!-- contenido-->
+        <div class="container">
+            <div class="row">
+                <!-- galeria-->
+                <section id="card" class="col-xs-1 col-md-4 col-lg-6">
+                    <img class="card-img-top" src="img/el%20cuiador%20verde.jpg" alt="Card image" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </section>
+
+                <section id="card" class="col-xs-1 col-md-4 col-lg-6">
+                    <img class="card-img-top" src="img/3.jpg" alt="Card image" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </section>
+  <section id="card" class="col-xs-1 col-md-4 col-lg-4">
+                    <img class="card-img-top" src="img/oraculo%20(1).gif" alt="Card image" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                </section>
+                <section id="card" class="col-xs-1 col-md-4 col-lg-4">
+                    <img class="card-img-top" src="img/oraculo%20(1).gif" alt="Card image" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                </section>
+                <section id="card" class="col-xs-1 col-md-4 col-lg-4">
+                    <img class="card-img-top" src="img/oraculo%20(1).gif" alt="Card image" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                </section>
+                <section id="card" class="col-xs-1 col-md-4 col-lg-6">
+                    <img class="card-img-top" src="img/1.jpg" alt="Card image" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </section>
+                <section id="card" class="col-xs-1 col-md-4 col-lg-6">
+                    <img class="card-img-top" src="img/2.jpg" alt="Card image" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </section>
+
+                  <section id="card" class="col-xs-1 col-md-4 col-lg-12">
+                    <img class="card-img-top" src="img/libros.png" alt="Card image" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                </section>
+            </div>
+      
+    </div>
+    
+    <!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" width="500" height="500"  class="col-xs-1 col-md-4 col-lg-6" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 5</div>
+      <img src="img/el%20cuiador%20verde.jpg">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 5</div>
+      <img src="img/3.jpg">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 5</div>
+      <img src="img/1.jpg">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 5</div>
+      <img src="img/2.jpg">
+    </div>
+      
+       <div class="mySlides">
+      <div class="numbertext">5 / 5</div>
+      <img src="img/el%20educador.jpg">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+</div>
+    
+    
+    
+    
+    
+    
+    
     <!--Cookies-->
-    <div id="div-cookies" style="display: none;">
+   <div id="div-cookies">
 Necesitamos usar cookies para que funcione todo, si permanece aquí acepta su uso, más información en
 <a hreflang="es" href="/info/aviso-legal">Aviso Legal</a>
 y la
 <a hreflang="es" href="/info/politica-de-privacidad">Política de Privacidad</a>.
-<button type="button" class="btn btn-sm btn-primary" onclick="acceptCookies()">
+<button type="button" class="btn btn-sm btn-primary">
 Acepto el uso de cookies
 </button>
 </div>
-        
+
+    <script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $('#div-cookies').hide();
+  });
+});
+</script> 
+    
+    
+    
+    <script>
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
 </body>

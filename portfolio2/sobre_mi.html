@@ -11,9 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
       <div class="fondo_gr">
     <!-- MENÚ-->
@@ -47,10 +45,40 @@
             </div>
         </nav>
     </div>
+          
+          <!-- CARRUSEL-->
+    
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- barritas indicadoras nº img -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+            </ul>
+
+            <!-- Imágenes-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/logo%20libreria.png" alt="sakura">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/vuelta.png" alt="Vuelta">
+                </div>
+            </div>
+
+            <!-- Iconos controles derecha e izquierda-->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+    </div>
+    
    <!-- contenido-->
     <div class="container">   
         <div class="row">
         <section id="contenido" class="col-xs-12 col-sm-8">
+    
             <h2>¡HOLA!</h2>
        
             <p>
@@ -65,5 +93,6 @@
                 </div>
      </div>
 </div>
+  
 </body>
     </html>
